@@ -1,0 +1,189 @@
+body {
+    #card {
+        z-index: 1000;
+        position: fixed;
+        bottom: 30px;
+        right: 100px;
+        .cardData {
+            visibility: hidden;
+            background: #ffffff;
+            border: 2px solid #eceef7;
+            box-sizing: border-box;
+            border-radius: 15px;
+            .head {
+                font-family: Ubuntu;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 32px;
+                letter-spacing: 0em;
+                text-align: left;
+                padding: 20px;
+            }
+            ul {
+                padding: 10px;
+                font-weight: bold;
+                .title {
+                    font-family: Playfair Display;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 19px;
+
+                    color: #231e36;
+                }
+                .count {
+                    font-family: Playfair Display;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 19px;
+
+                    color: #231e36;
+                    padding: 8% 5%;
+                }
+                .des {
+                    padding: 2% 0;
+                }
+                .price {
+                    font-family: Ubuntu;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 23px;
+                    /* identical to box height */
+
+                    color: #231e36;
+                    align-items: center;
+                    display: flex;
+                    margin-left: 35px;
+                    font-weight: bold;
+                }
+            }
+        }
+        #button {
+            margin-left: 80%;
+            display: inline-block;
+            background-color: #ff9800;
+            width: 50px;
+            border-radius: 100%;
+            height: 50px;
+            text-align: center;
+            transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+            opacity: 0;
+            visibility: hidden;
+        }
+        #button::after {
+            content: "\f291";
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 20px;
+            text-decoration: none;
+            line-height: 50px;
+            color: #fff;
+        }
+        #button:hover {
+            cursor: pointer;
+            background-color: #333;
+        }
+        #button:active {
+            background-color: #555;
+        }
+        #button.show {
+            opacity: 10;
+            visibility: visible;
+        }
+    }
+
+    /* Styles for the content section */
+
+    .content {
+        width: 77%;
+        margin: 50px auto;
+        font-family: "Merriweather", serif;
+        font-size: 17px;
+        color: #6c767a;
+        line-height: 1.9;
+    }
+    @media (min-width: 500px) {
+        .content {
+            width: 43%;
+        }
+        #button {
+            margin: 30px;
+        }
+    }
+    .content h1 {
+        margin-bottom: -10px;
+        color: #03a9f4;
+        line-height: 1.5;
+    }
+    .content h3 {
+        font-style: italic;
+        color: #96a2a7;
+    }
+}
+header {
+    background: linear-gradient(to bottom, #f0f5fb 75%, #eee 25%);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    .headerInfo {
+        padding: 10px 0;
+        .date,
+        .phoneNum {
+            line-height: 40px;
+            color: #000000;
+        }
+    }
+    .intoHead {
+        position: relative;
+        padding: 100px 0;
+        color: #000000;
+        font-style: normal;
+        font-family: Montserrat;
+        img {
+            padding: 70px 0;
+        }
+        .title {
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 59px;
+        }
+        .des {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 140%;
+        }
+    }
+    .product1,
+    .product3,
+    .product2,
+    .product4,
+    .product5 {
+        position: absolute;
+    }
+    .product1 {
+        top: 10%;
+        left: 0%;
+    }
+    .product2 {
+        top: 65%;
+        left: 15%;
+    }
+    .product3 {
+        top: 29%;
+        right: 6%;
+    }
+    .product4 {
+        top: 96%;
+        left: 6%;
+    }
+    .product5 {
+        top: 80%;
+        right: 20%;
+    }
+    overflow-x: hidden;
+}

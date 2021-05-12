@@ -1,1 +1,186 @@
-/*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+body {
+  /* Styles for the content section */
+}
+body #card {
+  z-index: 1000;
+  position: fixed;
+  bottom: 30px;
+  right: 100px;
+}
+body #card .cardData {
+  visibility: hidden;
+  background: #ffffff;
+  border: 2px solid #eceef7;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+body #card .cardData .head {
+  font-family: Ubuntu;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 20px;
+}
+body #card .cardData ul {
+  padding: 10px;
+  font-weight: bold;
+}
+body #card .cardData ul .title {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #231e36;
+}
+body #card .cardData ul .count {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  color: #231e36;
+  padding: 8% 5%;
+}
+body #card .cardData ul .des {
+  padding: 2% 0;
+}
+body #card .cardData ul .price {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  /* identical to box height */
+  color: #231e36;
+  align-items: center;
+  display: flex;
+  margin-left: 35px;
+  font-weight: bold;
+}
+body #card #button {
+  margin-left: 80%;
+  display: inline-block;
+  background-color: #ff9800;
+  width: 50px;
+  border-radius: 100%;
+  height: 50px;
+  text-align: center;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+body #card #button::after {
+  content: "";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 50px;
+  color: #fff;
+}
+body #card #button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+body #card #button:active {
+  background-color: #555;
+}
+body #card #button.show {
+  opacity: 10;
+  visibility: visible;
+}
+body .content {
+  width: 77%;
+  margin: 50px auto;
+  font-family: "Merriweather", serif;
+  font-size: 17px;
+  color: #6c767a;
+  line-height: 1.9;
+}
+@media (min-width: 500px) {
+  body .content {
+    width: 43%;
+  }
+  body #button {
+    margin: 30px;
+  }
+}
+body .content h1 {
+  margin-bottom: -10px;
+  color: #03a9f4;
+  line-height: 1.5;
+}
+body .content h3 {
+  font-style: italic;
+  color: #96a2a7;
+}
+
+header {
+  background: linear-gradient(to bottom, #f0f5fb 75%, #eee 25%);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+header .headerInfo {
+  padding: 10px 0;
+}
+header .headerInfo .date,
+header .headerInfo .phoneNum {
+  line-height: 40px;
+  color: #000000;
+}
+header .intoHead {
+  position: relative;
+  padding: 100px 0;
+  color: #000000;
+  font-style: normal;
+  font-family: Montserrat;
+}
+header .intoHead img {
+  padding: 70px 0;
+}
+header .intoHead .title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 59px;
+}
+header .intoHead .des {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+}
+header .product1,
+header .product3,
+header .product2,
+header .product4,
+header .product5 {
+  position: absolute;
+}
+header .product1 {
+  top: 10%;
+  left: 0%;
+}
+header .product2 {
+  top: 65%;
+  left: 15%;
+}
+header .product3 {
+  top: 29%;
+  right: 6%;
+}
+header .product4 {
+  top: 96%;
+  left: 6%;
+}
+header .product5 {
+  top: 80%;
+  right: 20%;
+}/*# sourceMappingURL=style.css.map */
