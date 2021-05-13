@@ -1,7 +1,7 @@
 var btn = $('#button');
 
 
-$("#button").mouseover(function () {
+$("#button").mouseenter(function () {
     $(".cardData").css("visibility", "visible")
 })
 
